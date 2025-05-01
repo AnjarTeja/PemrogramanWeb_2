@@ -31,8 +31,9 @@ while ($record = mysqli_fetch_array($query)) {
                                 <th scope="col">No HP</th>
                                 <th scope="col">Alamat</th>
                                 <th scope="col">Pesanan</th>
+                                <th scope="col">Jumlah Pesanan</th>
                                 <th scope="col">Total Harga</th>
-                                <th scope="col">Aksi</th>
+                                <th scope="col">CRUD</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,6 +47,7 @@ while ($record = mysqli_fetch_array($query)) {
                                     <td><?= $row['nohp'] ?></td>
                                     <td><?= $row['alamat'] ?></td>
                                     <td><?= $row['pesanan'] ?></td>
+                                    <td><?= $row['jumlah_pesan'] ?></td>
                                     <td><?= $row['total_harga'] ?></td>
                                     <td>
                                         <div class="d-flex">
@@ -81,6 +83,10 @@ while ($record = mysqli_fetch_array($query)) {
                                                     <div class="form-floating mb-3">
                                                         <textarea disabled class="form-control" style="height: 100px"><?= $row['pesanan'] ?></textarea>
                                                         <label>Pesanan</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <textarea disabled class="form-control" style="height: 100px"><?= $row['jumlah_pesan'] ?></textarea>
+                                                        <label>Jumlah Pesanan</label>
                                                     </div>
                                                     <div class="form-floating mb-3">
                                                         <input disabled type="text" class="form-control" value="<?= $row['total_harga'] ?>">
@@ -123,6 +129,10 @@ while ($record = mysqli_fetch_array($query)) {
                                                         <label>Pesanan</label>
                                                     </div>
                                                     <div class="form-floating mb-3">
+                                                        <textarea class="form-control" style="height: 100px" name="jumlah_pesan" required><?= $row['jumlah_pesan'] ?></textarea>
+                                                        <label>Jumlah Pesanan</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
                                                         <input type="text" class="form-control" name="total_harga" required value="<?= $row['total_harga'] ?>">
                                                         <label>Total Harga</label>
                                                     </div>
@@ -159,7 +169,7 @@ while ($record = mysqli_fetch_array($query)) {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             <?php endforeach; ?>
                         </tbody>
                     </table>

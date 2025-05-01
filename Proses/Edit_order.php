@@ -6,6 +6,7 @@ $pelanggan      = isset($_POST['pelanggan']) ? mysqli_real_escape_string($conn, 
 $nohp           = isset($_POST['nohp']) ? mysqli_real_escape_string($conn, htmlentities($_POST['nohp'])) : "";
 $alamat         = isset($_POST['alamat']) ? mysqli_real_escape_string($conn, htmlentities($_POST['alamat'])) : "";
 $pesanan        = isset($_POST['pesanan']) ? mysqli_real_escape_string($conn, htmlentities($_POST['pesanan'])) : "";
+$Jpesanan       = isset($_POST['jumlah_pesan']) ? mysqli_real_escape_string($conn, htmlentities($_POST['jumlah_pesan'])) : "";
 $total_harga    = isset($_POST['total_harga']) ? mysqli_real_escape_string($conn, htmlentities($_POST['total_harga'])) : "";
 
 if ($id && $pelanggan && $nohp && $alamat && $pesanan && $total_harga) {
@@ -14,10 +15,11 @@ if ($id && $pelanggan && $nohp && $alamat && $pesanan && $total_harga) {
         nohp = '$nohp',
         alamat = '$alamat',
         pesanan = '$pesanan',
+        jumlah_pesan = '$Jpesanan',
         total_harga = '$total_harga'
         WHERE id = '$id'
     ");
-    
+
     if ($update) {
         echo "<script>
             alert('Berhasil mengupdate order!');
@@ -35,4 +37,3 @@ if ($id && $pelanggan && $nohp && $alamat && $pesanan && $total_harga) {
         window.location.href = '../Admin/Order';
     </script>";
 }
-?>
