@@ -3,7 +3,6 @@
         <div class="card-header">
             Home
         </div>
-        <!-- Gambar besar ditampilkan penuh -->
         <img src="../assets/img/Home.jpg" class="img-fluid w-100" alt="Home Image" style="max-height: 500px; object-fit: cover;">
         <div class="card-body text-center">
             <h5 class="card-title">Selamat Datang di Ayam bakar Mang Oman</h5>
