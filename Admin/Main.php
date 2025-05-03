@@ -20,7 +20,7 @@ $hasil = mysqli_fetch_array($query);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body style="height: 3000px">
+<body>
     <!-- Header -->
     <?php include 'Header.php'; ?>
     <!-- End Header -->

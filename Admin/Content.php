@@ -3,11 +3,11 @@
         <div class="card-header">
             Home
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- Gambar besar ditampilkan penuh -->
+        <img src="../assets/img/Home.jpg" class="img-fluid w-100" alt="Home Image" style="max-height: 500px; object-fit: cover;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Selamat Datang di Ayam bakar Mang Oman</h5>
+            <p class="card-text">Nikmati layanan kami dengan mudah dan cepat.</p>
         </div>
     </div>
-</div>
 </div>

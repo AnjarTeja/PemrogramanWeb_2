@@ -8,7 +8,6 @@
                         <?php echo $hasil['username']; ?>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end mt-2">
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i> Profile</a></li>
                         <li><a class="dropdown-item" href="Logout"><i class="bi bi-door-open"></i> Logout</a></li>
                     </ul>
                 </li>
